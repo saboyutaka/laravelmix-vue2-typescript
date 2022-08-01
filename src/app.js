@@ -1,8 +1,9 @@
 import Vue from "vue";
+import App from "./components/App.vue";
 
 const app = new Vue({
   el: "#app",
-  data: {
-    message: "Hello Vue!",
+  components: {
+    App,
   },
 });
