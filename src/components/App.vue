@@ -8,9 +8,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import Panel from "./Panel.vue";
-export default {
+
+export default Vue.extend({
   components: {
     Panel,
   },
@@ -20,7 +22,7 @@ export default {
       contents: ["パネル1", "パネル2", "パネル3"],
     };
   },
-};
+});
 </script>
 
 <style scoped>

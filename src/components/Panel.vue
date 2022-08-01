@@ -1,18 +1,23 @@
 <template>
   <div class="panel">
     <p>{{ content }}</p>
+    <p>{{ modifiedContent }}</p>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   props: {
-    content: {
-      required: true,
-      type: String
-    }
-  }
-};
+    content: String,
+  },
+  computed: {
+    modifiedContent(): string {
+      return this.content + this.content;
+    },
+  },
+});
 </script>
 
 <style scoped>
