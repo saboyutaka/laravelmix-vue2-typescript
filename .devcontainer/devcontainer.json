@@ -1,0 +1,16 @@
+{
+  "name": "Vue2 TypeScript",
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "npm",
+  "workspaceFolder": "/app",
+  "runServices": ["npm"],
+  "settings": {},
+  "extensions": [
+    "VisualStudioExptTeam.vscodeintellicode",
+    "esbenp.prettier-vscode",
+    "octref.vetur",
+    "sysoev.language-stylus",
+    "thisismanta.stylus-supremacy",
+    "EditorConfig.EditorConfig"
+  ]
+}
